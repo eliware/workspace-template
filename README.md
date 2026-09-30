@@ -1,140 +1,124 @@
 # [![eliware.org](https://eliware.org/logos/brand.png)](https://discord.gg/M6aTR9eTwN)
 
-## @eliware/workspace-template [![license](https://img.shields.io/github/license/eliware/workspace-template.svg)](LICENSE)[![build status](https://github.com/eliware/workspace-template/actions/workflows/nodejs.yml/badge.svg)](https://github.com/eliware/workspace-template/actions)
-
-Documentation: [docs](docs/README.md) · [specifications](specs/README.md) · [examples](examples/README.md) · [release notes](RELEASE_NOTES.md)
-
-A starter template for new Node.js projects. Use this as a foundation for your next application or service.
-
----
+## @eliware/workspace-template [![license](https://img.shields.io/github/license/eliware/workspace-template.svg)](LICENSE) [![CI](https://github.com/eliware/workspace-template/actions/workflows/ci.yml/badge.svg)](https://github.com/eliware/workspace-template/actions/workflows/ci.yml)
 
 ## Table of Contents
 
 - [Features](#features)
 - [Requirements](#requirements)
-- [Getting Started](#getting-started)
+- [Setup](#setup)
+- [Usage](#usage)
 - [Development](#development)
 - [Testing](#testing)
-- [Errors / Troubleshooting](#errors--troubleshooting)
+- [Troubleshooting](#troubleshooting)
 - [Security](#security)
-- [Customization](#customization)
+- [Runbooks](#runbooks)
+- [Communication](#communication)
+- [Recovery](#recovery)
 - [Support](#support)
 - [License](#license)
 - [Links](#links)
 
 ## Features
 
-- Pre-configured for Node.js (ESM)
-- Environment variable support via dotenv
-- Logging and signal handling via `@eliware/common`
-- Jest for testing
-- MIT License
+A baseline for private Eliware workspaces with indexed role guidance, structured
+directives, local runbooks, and shared validation.
+
+Package description: An Eliware workspace template for indexed role guidance, ownership, communication, and recovery. Author: Eliware <eliware@eliware.org>. License: MIT.
+
+A derived workspace defines its role and ownership boundaries. Project
+implementation and cross-cutting procedures stay in their owning repositories.
 
 ## Requirements
 
-- Node.js 26 or newer
-- A new project directory and environment appropriate to the application you build from this template
+Node.js 26 and npm are required for validation. This template defines no
+application runtime commands, environment variables, or runtime configuration.
+The `package.json` scripts are repository validation commands.
 
 ## Setup
 
-1. **Clone this template:**
-
-   ```bash
-   git clone https://github.com/eliware/workspace-template.git
-   cd workspace-template
-   rm -rf .git
-   git init
-   npm install
-   ```
-
-2. **Update project details:**
-   - Edit `package.json` (name, description, author, etc.)
-   - Update this `README.md` as needed
-   - Change the license if required
+Create a repository from this template, then replace template metadata and
+content with the derived workspace's role, purpose, and ownership boundaries.
+Run `npm ci` from the repository root before validation.
 
 ## Usage
 
-Use this repository as a starting point: clone it, rename the package and
-entrypoint, configure `.env`, and replace the starter implementation.
+Start with this README, then follow [directives](specs/directives.json), the
+[specifications index](specs/README.md), and the
+[runbook index](runbooks/README.md). Keep workspace-owned guidance here and link
+to shared policy and company-wide procedures in their owning repositories.
 
-## Authority
-
-Keep workspace-specific decisions and durable policy in indexed structured
-records. Company-wide procedures remain owned by Operations.
-
-## Runbooks
-
-Store each workspace runbook as a separate indexed JSON record under `runbooks/`
-and link it from `runbooks/README.md`.
-
-## Communication
-
-Document the authoritative communication channels, ownership, and escalation
-boundaries for the workspace.
-
-## Recovery
-
-Document recovery ownership, checkpoints, and rollback boundaries without
-claiming that a clean commit proves live-system health.
+Documentation: [specifications](specs/README.md) · [runbooks](runbooks/README.md)
 
 ## Development
 
-- Main entry: `workspace-template.mjs`
-- Start your app:
-
-  ```bash
-  node workspace-template.mjs
-  ```
-
-- Add your code in new files and import as needed.
+Read [AGENTS.md](AGENTS.md), this README, and applicable specifications before
+changing files. Keep the root README and indexes aligned with the maintained
+records. Replace the template's package name, repository URL, description,
+keywords, and directive ID when creating a derived workspace.
 
 ## Testing
 
-- Run tests and coverage-gap checks with:
-
-  ```bash
-  npm test
-  npm run test:gaps
-  npm run lint
-   npm run pack
-  ```
-
-- Add your tests in the `__tests__` folder or alongside your code.
-
-## Template inheritance
-
-Keep the template relationship when cloning specialized templates. Use `origin` for the new project and `upstream` for this template, then fetch and review upstream changes before merging.
-
-## Customization
-
-- Replace or extend the logging and signal handling as needed.
-- Add dependencies and scripts to fit your project.
-- Remove or modify template files and sections.
+Run `npm test` for aggregate validation. Use `npm run lint`, `npm run audit`,
+`npm run format`, or `npm run format:check` for focused stages. The scripts run
+through `eliware-test`.
 
 ## Troubleshooting
 
-This repository is a starter application, not a production service. Replace placeholder metadata and application logic after cloning. Keep `.env` local, verify configuration before startup, and use `registerSignals`/`registerHandlers` for explicit graceful shutdown and error handling.
+Use Node.js 26 and run `npm ci` after dependency changes. Review the rule and
+file path reported by `eliware-test` when validation fails.
 
 ## Security
 
-Never commit `.env`, tokens, passwords, private keys, or credential-bearing URLs. Store secrets in the deployment environment or secret manager, and review dependencies and permissions before deploying a derived project.
+Keep credentials, secrets, decrypted data, runtime output, and machine-specific
+state outside version control. Workspace repositories are private and must not
+contain plaintext secrets.
+
+## Runbooks
+
+The [runbook index](runbooks/README.md) lists local workspace procedures and
+defines their navigation boundary. Store each procedure in a separate JSON
+record with an ID, purpose, owner, boundaries, and steps. Use
+[Eliware Operations](https://github.com/eliware/operations) for company-wide
+procedures.
+
+## Communication
+
+Use [Eliware Operations](https://github.com/eliware/operations) for cross-role
+communication routing and [Eliware Tasklist](https://github.com/eliware/tasklist)
+for company-wide assignments and status. Replace these links only when the
+owning repositories change.
+
+## Recovery
+
+Document workspace-specific recovery procedures in the local runbook index.
+Cross-role recovery coordination belongs to
+[Eliware Operations](https://github.com/eliware/operations); track company-wide
+blockers and next actions in [Eliware Tasklist](https://github.com/eliware/tasklist).
 
 ## Support
 
-For help, questions, or to chat with the author and community, visit:
-
-[![Discord](https://eliware.org/logos/discord_96.png)](https://discord.gg/M6aTR9eTwN)[![eliware.org](https://eliware.org/logos/eliware_96.png)](https://discord.gg/M6aTR9eTwN)
+[![Discord](https://eliware.org/logos/discord_96.png)](https://discord.gg/M6aTR9eTwN)
 
 **[eliware.org on Discord](https://discord.gg/M6aTR9eTwN)**
 
+Use the [Eliware Discord community](https://discord.gg/M6aTR9eTwN),
+[GitHub issues](https://github.com/eliware/workspace-template/issues), or
+eliware@eliware.org. Include the relevant directive or runbook and a concise
+description of the issue when requesting help.
+
 ## License
 
-[MIT © 2025 Eli Sterling, eliware.org](LICENSE)
+[license](LICENSE)
 
 ## Links
 
+- [Specifications](specs/README.md)
+- [Runbooks](runbooks/README.md)
+- [Eliware Tasklist](https://github.com/eliware/tasklist)
+- [Eliware Operations](https://github.com/eliware/operations)
+- [Canonical repository conventions](https://github.com/eliware/test/blob/main/specs/conventions/README.md)
 - [Home Page](https://eliware.org)
-- [GitHub Repo](https://github.com/eliware/workspace-template)
+- [GitHub Repo](https://github.com/eliware/workspace-template) (`git+https://github.com/eliware/workspace-template.git`)
 - [GitHub Org](https://github.com/eliware)
-- [GitHub Personal](https://github.com/eli-sterling)
 - [Discord](https://discord.gg/M6aTR9eTwN)

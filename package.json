@@ -1,75 +1,60 @@
 {
   "name": "@eliware/workspace-template",
-  "type": "module",
-  "version": "1.1.0",
-  "description": "An Eliware workspace template for indexed runbooks, ownership, communication, and recovery.",
-  "main": "workspace-template.mjs",
-  "scripts": {
-    "start": "node workspace-template.mjs",
-    "test": "npx --node-options=\"--experimental-vm-modules --no-warnings\" jest --detectOpenHandles --silent --coverage",
-    "test:gaps": "npm test 2>&1 | grep '|' | grep -vF '|     100 |      100 |     100 |     100 |'",
-    "lint": "npx oxlint .",
-    "pack": "npm pack --dry-run"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/eliware/workspace-template.git"
-  },
+  "version": "9.0.0",
+  "private": true,
+  "description": "An Eliware workspace template for indexed role guidance, ownership, communication, and recovery.",
   "keywords": [
+    "eliware",
     "workspace-template",
     "workspace",
-    "nodejs",
     "starter",
     "template"
   ],
-  "author": "Eli Sterling, eliware.org <eli@eliware.org>",
+  "author": "Eliware <eliware@eliware.org>",
   "license": "MIT",
-  "eliware": {
-    "apply": [
-      "general",
-      "workspace"
-    ],
-    "authority": {
-      "authoritativeFor": [
-        "Workspace template structure and operational index workflow."
-      ],
-      "notAuthoritativeFor": [
-        "Shared Eliware policy, operations, and publication authorization."
-      ]
-    },
-    "crosslinks": [
-      {
-        "path": "eliware/conventions",
-        "relationship": "relatedAuthority",
-        "authoritativeFor": "Applicable repository conventions."
-      }
-    ]
+  "type": "module",
+  "engines": {
+    "node": "26"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eliware/workspace-template"
   },
   "bugs": {
     "url": "https://github.com/eliware/workspace-template/issues"
   },
   "homepage": "https://github.com/eliware/workspace-template#readme",
-  "devDependencies": {
-    "jest": "^30.4.2"
+  "scripts": {
+    "test": "eliware-test",
+    "lint": "eliware-test --lint",
+    "audit": "eliware-test --audit",
+    "format": "eliware-test --format",
+    "format:check": "eliware-test --format-check"
   },
-  "jest": {
-    "testEnvironment": "node",
-    "testMatch": [
-      "**/?(*.)+(spec|test).[jt]s?(x)",
-      "**/?(*.)+(spec|test).mjs"
+  "prettier": {
+    "printWidth": 100,
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": true,
+    "singleQuote": false,
+    "quoteProps": "as-needed",
+    "jsxSingleQuote": false,
+    "trailingComma": "all",
+    "bracketSpacing": true,
+    "bracketSameLine": false,
+    "arrowParens": "always",
+    "proseWrap": "preserve",
+    "endOfLine": "lf"
+  },
+  "eliware": {
+    "apply": [
+      "general",
+      "workspace",
+      "private"
     ]
   },
-  "dependencies": {
-    "@eliware/common": "^1.1.7",
-    "dotenv": "^17.4.2"
-  },
-  "files": [
-    "workspace-template.mjs",
-    "examples",
-    "src",
-    "workspace-template.service",
-    ".env.example",
-    "README.md",
-    "LICENSE"
-  ]
+  "jest": {},
+  "devDependencies": {
+    "@eliware/test": "^8.0.0"
+  }
 }

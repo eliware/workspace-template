@@ -1,8 +1,9 @@
 # Specifications
 
-Repository authority: [authority.json](authority.json). Shared directive index:
-[directives.json](directives.json).
+This directory contains structured records for this workspace.
 
-This template applies the shared `general` and `workspace` profiles. Derived
-projects should add repository-specific structured specifications here without
-copying the shared convention files.
+## Files
+
+- [directives.json](directives.json) — workspace-specific guidance.
+
+[Return to the root README](../README.md).

@@ -1,5 +1,9 @@
-# Runbooks
+# Workspace runbooks
 
-Workspace-owned procedures belong in separate JSON records under this directory.
-Each record should identify its purpose, owner, boundaries, and steps. Link each
-runbook from this index and keep company-wide workflows in Operations.
+Navigation-only index for workspace-owned procedures. Store each procedure in
+its own JSON record under this directory and link it here. Keep company-wide
+operational procedures in [Eliware Operations](https://github.com/eliware/operations).
+
+No workspace-specific procedures are defined by this template.
+
+[Return to the root README](../README.md).

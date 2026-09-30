@@ -1,12 +1,18 @@
 {
-  "version": "8.0",
-  "repositoryId": "eliware/workspace-template",
-  "description": "Repository-specific directive index; shared rules remain authoritative in eliware/conventions.",
+  "version": "9.0",
+  "description": "Baseline workspace guidance for repositories created from this template.",
   "directives": [
     {
-      "id": "E-1",
-      "source": "eliware/conventions",
-      "profiles": ["general", "workspace"]
+      "id": "E-20",
+      "dos": [
+        "Use the workspace for role-specific decisions, coordination, and guidance.",
+        "Keep role boundaries clear and link to shared requirements and procedures in their owning repositories.",
+        "Store each workspace-owned procedure as a separate JSON runbook indexed in runbooks/README.md."
+      ],
+      "donts": [
+        "Do not leave template-specific identity or placeholder content in a derived workspace.",
+        "Do not duplicate shared conventions or company-wide procedures."
+      ]
     }
   ]
 }
