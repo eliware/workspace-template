@@ -1,6 +1,6 @@
 # [![eliware.org](https://eliware.org/logos/brand.png)](https://discord.gg/M6aTR9eTwN)
 
-## @eliware/workspace-template [![License](https://img.shields.io/github/license/eliware/workspace-template)](https://github.com/eliware/workspace-template/blob/main/LICENSE) [![CI](https://github.com/eliware/workspace-template/actions/workflows/ci.yml/badge.svg)](https://github.com/eliware/workspace-template/actions/workflows/ci.yml)
+## @eliware/workspace-template [![License](https://img.shields.io/github/license/eliware/workspace-template)](https://github.com/eliware/workspace-template/blob/main/LICENSE) [![CI](https://github.com/eliware/workspace-template/actions/workflows/ci.yaml/badge.svg)](https://github.com/eliware/workspace-template/actions/workflows/ci.yaml)
 
 ## Table of Contents
 
@@ -33,7 +33,7 @@ implementation and cross-cutting procedures stay in their owning repositories.
 
 ## Requirements
 
-Node.js 26 and npm are required for validation. This template defines no
+Node.js 26 and npm 12 or later are required for repository validation. This template defines no
 application runtime commands, environment variables, or runtime configuration.
 The `package.json` scripts are repository validation commands.
 
@@ -67,7 +67,7 @@ through `eliware-test`.
 
 ## Troubleshooting
 
-Use Node.js 26 and run `npm ci` after dependency changes. Review the rule and
+Use Node.js 26 and npm 12 or later and run `npm ci` after dependency changes. Review the rule and
 file path reported by `eliware-test` when validation fails.
 
 ## Security
@@ -120,5 +120,10 @@ description of the issue when requesting help.
 - [Eliware](https://eliware.org)
 - [GitHub organization](https://github.com/eliware)
 - [Discord](https://discord.gg/M6aTR9eTwN)
-- [Documentation](https://github.com/eliware/docs/blob/main/repo-map.yaml) · [docs](docs/README.md)
+- [Eliware Docs](https://github.com/eliware/docs)
+- [Repository map](https://github.com/eliware/docs/blob/main/repo-map.yaml)
+- [Canonical repository profile specifications](https://github.com/eliware/test/blob/main/specs/conventions/README.md)
 - [specifications](specs/README.md)
+- [Directives](specs/directives.yaml)
+- [Runbooks](runbooks/README.md)
+- [Eliware Tasklist](https://github.com/eliware/tasklist)
