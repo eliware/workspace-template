@@ -1,6 +1,6 @@
 {
   "name": "@eliware/workspace-template",
-  "version": "9.0.0",
+  "version": "10.0.0",
   "private": true,
   "description": "An Eliware workspace template for indexed role guidance, ownership, communication, and recovery.",
   "keywords": [
@@ -53,8 +53,28 @@
       "private"
     ]
   },
-  "jest": {},
+  "jest": {
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/tests/**/*.test.mjs"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.mjs"
+    ],
+    "coverageReporters": [
+      "text",
+      "json-summary"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
+  },
   "devDependencies": {
-    "@eliware/test": "^9.0.0"
+    "@eliware/test": "^10.0.0"
   }
 }

@@ -1,6 +1,6 @@
 # [![eliware.org](https://eliware.org/logos/brand.png)](https://discord.gg/M6aTR9eTwN)
 
-## @eliware/workspace-template [![license](https://img.shields.io/github/license/eliware/workspace-template.svg)](LICENSE) [![CI](https://github.com/eliware/workspace-template/actions/workflows/ci.yml/badge.svg)](https://github.com/eliware/workspace-template/actions/workflows/ci.yml)
+## @eliware/workspace-template [![License](https://img.shields.io/github/license/eliware/workspace-template)](https://github.com/eliware/workspace-template/blob/main/LICENSE) [![CI](https://github.com/eliware/workspace-template/actions/workflows/ci.yml/badge.svg)](https://github.com/eliware/workspace-template/actions/workflows/ci.yml)
 
 ## Table of Contents
 
@@ -21,10 +21,12 @@
 
 ## Features
 
-A baseline for private Eliware workspaces with indexed role guidance, structured
-directives, local runbooks, and shared validation.
+This template owns reusable workspace structure and guidance; each derived workspace owns its role decisions and company-wide procedures.
 
 Package description: An Eliware workspace template for indexed role guidance, ownership, communication, and recovery. Author: Eliware <eliware@eliware.org>. License: MIT.
+
+A baseline for private Eliware workspaces with indexed role guidance, structured
+directives, local runbooks, and shared validation.
 
 A derived workspace defines its role and ownership boundaries. Project
 implementation and cross-cutting procedures stay in their owning repositories.
@@ -43,12 +45,12 @@ Run `npm ci` from the repository root before validation.
 
 ## Usage
 
-Start with this README, then follow [directives](specs/directives.json), the
+Start with this README, then follow [directives](specs/directives.yaml), the
 [specifications index](specs/README.md), and the
 [runbook index](runbooks/README.md). Keep workspace-owned guidance here and link
 to shared policy and company-wide procedures in their owning repositories.
 
-Documentation: [specifications](specs/README.md) · [runbooks](runbooks/README.md)
+Documentation: [specifications](specs/README.md)
 
 ## Development
 
@@ -113,12 +115,10 @@ description of the issue when requesting help.
 
 ## Links
 
-- [Specifications](specs/README.md)
-- [Runbooks](runbooks/README.md)
-- [Eliware Tasklist](https://github.com/eliware/tasklist)
-- [Eliware Operations](https://github.com/eliware/operations)
-- [Canonical repository conventions](https://github.com/eliware/test/blob/main/specs/conventions/README.md)
-- [Home Page](https://eliware.org)
-- [GitHub Repo](https://github.com/eliware/workspace-template) (`git+https://github.com/eliware/workspace-template.git`)
-- [GitHub Org](https://github.com/eliware)
+- [Home Page](https://github.com/eliware/workspace-template#readme)
+- [GitHub repository](https://github.com/eliware/workspace-template.git)
+- [Eliware](https://eliware.org)
+- [GitHub organization](https://github.com/eliware)
 - [Discord](https://discord.gg/M6aTR9eTwN)
+- [Documentation](https://github.com/eliware/docs/blob/main/repo-map.yaml) · [docs](docs/README.md)
+- [specifications](specs/README.md)
