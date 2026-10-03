@@ -10,7 +10,7 @@ This `AGENTS.md` applies repository-wide; a nearer `AGENTS.md` provides instruct
 
 ## Layout
 
-The required workspace structure includes the root `README.md`, `AGENTS.md`, `specs/directives.yaml`, `specs/README.md`, `runbooks/README.md`, `package.json`, `.github/workflows/ci.yml`, and `.knit/deploy.yaml`. Add a separate JSON file under `runbooks/` for each local procedure and index it in `runbooks/README.md`. Do not impose application or library source and test files on this workspace template.
+The required workspace structure includes the root `README.md`, `AGENTS.md`, `specs/directives.yaml`, `specs/README.md`, `runbooks/README.md`, `package.json`, `.github/workflows/ci.yaml`, and `.knit/deploy.yaml`. Add a separate JSON file under `runbooks/` for each local procedure and index it in `runbooks/README.md`. Do not impose application or library source and test files on this workspace template.
 
 ## Development
 

@@ -1,3 +1,3 @@
-# workspace-template specifications
+# Specifications
 
-- [Directives](directives.yaml)
+- [Repository directives](directives.yaml)
