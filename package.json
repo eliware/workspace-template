@@ -47,6 +47,7 @@
     "endOfLine": "lf"
   },
   "eliware": {
+    "id": "E-20",
     "apply": [
       "general",
       "workspace",
