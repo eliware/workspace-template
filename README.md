@@ -1,6 +1,6 @@
 # [![eliware.org](https://eliware.org/logos/brand.png)](https://discord.gg/M6aTR9eTwN)
 
-## @eliware/workspace-template [![License](https://img.shields.io/github/license/eliware/workspace-template)](https://github.com/eliware/workspace-template/blob/main/LICENSE) [![CI](https://github.com/eliware/workspace-template/actions/workflows/ci.yaml/badge.svg)](https://github.com/eliware/workspace-template/actions/workflows/ci.yaml)
+@eliware/workspace-template [![License](https://img.shields.io/github/license/eliware/workspace-template)](https://github.com/eliware/workspace-template/blob/main/LICENSE) [![CI](https://github.com/eliware/workspace-template/actions/workflows/ci.yaml/badge.svg)](https://github.com/eliware/workspace-template/actions/workflows/ci.yaml)
 
 ## Table of Contents
 
