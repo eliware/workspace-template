@@ -120,8 +120,6 @@ description of the issue when requesting help.
 - [Eliware](https://eliware.org)
 - [GitHub organization](https://github.com/eliware)
 - [Discord](https://discord.gg/M6aTR9eTwN)
-- [Eliware Docs](https://github.com/eliware/docs)
-- [Repository map](https://github.com/eliware/docs/blob/main/repo-map.yaml)
 - [Canonical repository profile specifications](https://github.com/eliware/test/blob/main/specs/conventions/README.md)
 - [specifications](specs/README.md)
 - [Directives](specs/directives.yaml)
