@@ -3,9 +3,6 @@ node_modules/
 coverage/
 dist/
 .cache/
-.env
-.env.*
-!.env.example
 .npm/
 *.log
 .DS_Store
@@ -13,3 +10,8 @@ Thumbs.db
 .vscode/
 .idea/
 artifacts/
+build/
+generated/
+test-results/
+.env*
+!.env*.example

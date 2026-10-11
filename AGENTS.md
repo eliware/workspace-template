@@ -20,9 +20,11 @@ Before changing files, read README.md, applicable AGENTS.md instructions, and ap
 
 ## Validation
 
-Use Node.js 26 and npm. This template has no application runtime commands, environment variables, or runtime configuration; `eliware-test` arguments are CLI options, not runtime settings. The shared validation CLI uses native ESM `.mjs` modules; this template has no local validation implementation. Run `npm ci` after dependency changes and `npm test` for aggregate validation. Use `npm run lint`, `npm run format:check`, and `npm run audit` for focused stages; `npm run format` writes formatted files. Run `git diff --check` before handoff. CI runs `npm ci` followed by `npm test` on Ubuntu.
+Use `npm run lint`, `npm run audit`, `npm run format`, and `npm run format:check` as needed.
 
-Use Node.js 26 and npm 12 or later for repository validation.
+Use Node.js 26 or later and npm. This template has no application runtime commands, environment variables, or runtime configuration; `eliware-test` arguments are CLI options, not runtime settings. The shared validation CLI uses native ESM `.mjs` modules; this template has no local validation implementation. Run `npm ci` after dependency changes and `npm test` for aggregate validation. Use `npm run lint`, `npm run format:check`, and `npm run audit` for focused stages; `npm run format` writes formatted files. Run `git diff --check` before handoff. CI runs `npm ci` followed by `npm test` on Ubuntu.
+
+Use Node.js 26 or later and npm 12 or later for repository validation.
 
 ## Security
 

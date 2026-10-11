@@ -1,7 +1,7 @@
 {
   "name": "@eliware/workspace-template",
-  "version": "11.0.0",
-  "private": true,
+  "version": "12.0.0",
+  "type": "module",
   "description": "An Eliware workspace template for indexed role guidance, ownership, communication, and recovery.",
   "keywords": [
     "eliware",
@@ -10,20 +10,7 @@
     "starter",
     "template"
   ],
-  "author": "Eliware <eliware@eliware.org>",
-  "license": "MIT",
-  "type": "module",
-  "engines": {
-    "node": "26"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/eliware/workspace-template.git"
-  },
-  "bugs": {
-    "url": "https://github.com/eliware/workspace-template/issues"
-  },
-  "homepage": "https://github.com/eliware/workspace-template#readme",
+  "private": true,
   "scripts": {
     "test": "eliware-test",
     "lint": "eliware-test --lint",
@@ -31,28 +18,11 @@
     "format": "eliware-test --format",
     "format:check": "eliware-test --format-check"
   },
-  "prettier": {
-    "printWidth": 100,
-    "tabWidth": 2,
-    "useTabs": false,
-    "semi": true,
-    "singleQuote": false,
-    "quoteProps": "as-needed",
-    "jsxSingleQuote": false,
-    "trailingComma": "all",
-    "bracketSpacing": true,
-    "bracketSameLine": false,
-    "arrowParens": "always",
-    "proseWrap": "preserve",
-    "endOfLine": "lf"
+  "engines": {
+    "node": ">=26"
   },
-  "eliware": {
-    "id": "E-20",
-    "apply": [
-      "general",
-      "workspace",
-      "private"
-    ]
+  "devDependencies": {
+    "@eliware/test": "^11.0.0"
   },
   "jest": {
     "testEnvironment": "node",
@@ -75,7 +45,37 @@
       }
     }
   },
-  "devDependencies": {
-    "@eliware/test": "^11.0.0"
+  "prettier": {
+    "printWidth": 100,
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": true,
+    "singleQuote": false,
+    "quoteProps": "as-needed",
+    "jsxSingleQuote": false,
+    "trailingComma": "all",
+    "bracketSpacing": true,
+    "bracketSameLine": false,
+    "arrowParens": "always",
+    "proseWrap": "preserve",
+    "endOfLine": "lf"
+  },
+  "author": "Eliware <eliware@eliware.org>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eliware/workspace-template.git"
+  },
+  "homepage": "https://github.com/eliware/workspace-template#readme",
+  "bugs": {
+    "url": "https://github.com/eliware/workspace-template/issues"
+  },
+  "eliware": {
+    "id": "E-20",
+    "apply": [
+      "general",
+      "workspace",
+      "private"
+    ]
   }
 }
