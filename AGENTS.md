@@ -39,7 +39,7 @@ Use Eliware Operations for approval before external changes.
 
 ## Workspace
 
-Store each procedure in an indexed YAML runbook.
+Store each procedure in an indexed JSON runbook.
 Write runbooks with ASD-STE100 rules.
 
 ## Private distribution
