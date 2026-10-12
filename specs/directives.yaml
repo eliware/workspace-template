@@ -7,8 +7,9 @@ directives:
         guidance.
       - Keep role boundaries clear and link to shared requirements and
         procedures in their owning repositories.
-      - Store each workspace-owned procedure as a separate JSON runbook indexed
-        in runbooks/README.md.
+      - Store each workspace-owned procedure as a separate .yaml runbook under
+        runbooks/ and link it from runbooks/README.md.
+      - Validate each runbook against the shared v12 runbook schema.
     donts:
       - Do not leave template-specific identity or placeholder content in a
         derived workspace.

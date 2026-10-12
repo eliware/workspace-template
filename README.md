@@ -60,7 +60,7 @@ Use only approved secret stores for secret values.
 ## Runbooks
 
 Use [the runbook index](runbooks/README.md) to find local procedures.
-Store each procedure as a separate JSON record with an ID, purpose, owner, boundaries, and steps. Write runbooks with ASD-STE100 rules.
+Store each procedure in a separate `.yaml` file under `runbooks/`. Validate each file against the shared v12 schema. Write runbook steps with ASD-STE100 rules.
 
 ## Communication
 
