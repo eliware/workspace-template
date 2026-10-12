@@ -23,80 +23,54 @@ An Eliware workspace template for indexed role guidance, ownership, communicatio
 
 ## Features
 
-This template owns reusable workspace structure and guidance; each derived workspace owns its role decisions and company-wide procedures.
-
-A baseline for private Eliware workspaces with indexed role guidance, structured
-directives, local runbooks, and shared validation.
-
-A derived workspace defines its role and ownership boundaries. Project
-implementation and cross-cutting procedures stay in their owning repositories.
+This template provides a reusable starting point. Each derived repository owns its product behavior and operating decisions.
 
 ## Requirements
 
-Node.js 26 or later and npm 12 or later are required for repository validation. This template defines no
-application runtime commands, environment variables, or runtime configuration.
-The `package.json` scripts are repository validation commands.
+Use Node.js 26 or later and npm 12 or later for repository validation.
 
 ## Setup
 
-Create a repository from this template, then replace template metadata and
-content with the derived workspace's role, purpose, and ownership boundaries.
-Run `npm ci` from the repository root before validation.
+Create a repository from this template. Replace the template name, description, URLs, keywords, and sample content.
+Run `npm ci` from the repository root.
 
 ## Usage
 
-Start with this README, then follow [directives](specs/directives.yaml), the
-[specifications index](specs/README.md), and the
-[runbook index](runbooks/README.md). Keep workspace-owned guidance here and link
-to shared policy and company-wide procedures in their owning repositories.
-
-Documentation: [specifications](specs/README.md)
+Follow this README and the [user guide](docs/README.md).
 
 ## Development
 
-Read [AGENTS.md](AGENTS.md), this README, and applicable specifications before
-changing files. Keep the root README and indexes aligned with the maintained
-records. Replace the template's package name, repository URL, description,
-keywords, and directive ID when creating a derived workspace.
+Read [AGENTS.md](AGENTS.md) and [the specifications index](specs/README.md) before you change files.
+Keep documents and records in the repository that owns them.
 
 ## Testing
 
-Run `npm test` for aggregate validation. Use `npm run lint`, `npm run audit`,
-`npm run format`, or `npm run format:check` for focused stages. The scripts run
-through `eliware-test`.
+Run `npm test` before handoff. It runs the repository checks through `eliware-test`.
 
 ## Troubleshooting
 
-Use Node.js 26 or later and npm 12 or later and run `npm ci` after dependency changes. Review the rule and
-file path reported by `eliware-test` when validation fails.
+Install the required Node.js and npm versions. Run `npm ci` after dependency changes.
+Review the file and rule in any validation error.
 
 ## Security
 
-Keep credentials, secrets, decrypted data, runtime output, and machine-specific
-state outside version control. Workspace repositories are private and must not
-contain plaintext secrets.
+Keep credentials, secrets, private data, and runtime state out of Git.
+Use only approved secret stores for secret values.
 
 ## Runbooks
 
-The [runbook index](runbooks/README.md) lists local workspace procedures and
-defines their navigation boundary. Store each procedure in a separate JSON
-record with an ID, purpose, owner, boundaries, and steps. Use
-[Eliware Operations](https://github.com/eliware/operations) for company-wide
-procedures.
+Use [the runbook index](runbooks/README.md) to find local procedures.
+Store each procedure as a separate JSON record with an ID, purpose, owner, boundaries, and steps. Write runbooks with ASD-STE100 rules.
 
 ## Communication
 
-Use [Eliware Operations](https://github.com/eliware/operations) for cross-role
-communication routing and [Eliware Tasklist](https://github.com/eliware/tasklist)
-for company-wide assignments and status. Replace these links only when the
-owning repositories change.
+Use [Eliware Operations](https://github.com/eliware/operations) for cross-role communication and company-wide procedures.
+Use [Eliware Tasklist](https://github.com/eliware/tasklist) for company-wide assignments and status.
 
 ## Recovery
 
-Document workspace-specific recovery procedures in the local runbook index.
-Cross-role recovery coordination belongs to
-[Eliware Operations](https://github.com/eliware/operations); track company-wide
-blockers and next actions in [Eliware Tasklist](https://github.com/eliware/tasklist).
+Keep workspace-specific recovery steps in local runbooks.
+Use Eliware Operations for cross-role recovery. Use Eliware Tasklist for blockers and next actions.
 
 ## Support
 
