@@ -14,7 +14,9 @@ Use this guide to create and maintain a private Eliware workspace from this temp
 
 State the role, decision boundary, and owner for each local process. Keep shared policy in its owning repository.
 
-Use the specifications index for structured records. Use the runbook index for local procedures. Store each procedure as a separate JSON record with an ID, purpose, owner, boundaries, and steps.
+Use the specifications index for structured records. Use the runbook index for local procedures. Store each procedure in a separate `.yaml` file under `runbooks/`.
+
+Set `schema-version` to `12`. Add a non-empty `title`. Add one or more non-empty strings under `steps`. Do not add other fields. Validate each file against the shared v12 runbook schema.
 
 Write runbooks with ASD-STE100 rules. Use short sentences, active voice, and one instruction per sentence.
 
