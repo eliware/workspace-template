@@ -20,7 +20,7 @@ Write runbooks with ASD-STE100 rules. Use short sentences, active voice, and one
 
 ## Coordinate and recover
 
-Use Eliware Operations for cross-role communication and company-wide procedures. Use Eliware Tasklist for assignments, status, and blockers.
+Use Eliware Operations for cross-role communication and company-wide procedures. Use GitHub Issues for assignments, status, blockers, and next actions.
 
 Keep workspace-specific recovery steps in local runbooks. Link to company-wide recovery guidance in its owning repository.
 

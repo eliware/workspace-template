@@ -65,12 +65,12 @@ Store each procedure in a separate `.yaml` file under `runbooks/`. Validate each
 ## Communication
 
 Use [Eliware Operations](https://github.com/eliware/operations) for cross-role communication and company-wide procedures.
-Use [Eliware Tasklist](https://github.com/eliware/tasklist) for company-wide assignments and status.
+Use GitHub Issues for assignments and status.
 
 ## Recovery
 
 Keep workspace-specific recovery steps in local runbooks.
-Use Eliware Operations for cross-role recovery. Use Eliware Tasklist for blockers and next actions.
+Use Eliware Operations for cross-role recovery. Use GitHub Issues for blockers and next actions.
 
 ## Support
 
