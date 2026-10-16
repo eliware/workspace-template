@@ -1,0 +1,16 @@
+schema-version: 13
+title: Deploy an application component
+purpose: Deploy one released component version to one environment.
+owner: Component maintainer
+boundaries: This procedure deploys one component to one environment.
+prerequisites:
+  - A released component version exists.
+  - The deployment tool can access the target environment.
+steps:
+  - Select the released component version. The plan shows this version.
+  - Select the target environment. The plan shows the selected environment.
+  - Examine the deployment plan. The plan shows the component, version, and environment.
+  - Start the deployment. The tool reports a correct result.
+  - Check the component health endpoint. The endpoint returns HTTP 200.
+  - Check the component logs. The logs show no startup errors.
+  - Record the deployed version. The deployment record shows the version and time.

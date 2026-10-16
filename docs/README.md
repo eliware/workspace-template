@@ -16,17 +16,17 @@ State the role, decision boundary, and owner for each local process. Keep shared
 
 Use the specifications index for structured records. Use the runbook index for local procedures. Store each procedure in a separate `.yaml` file under `runbooks/`.
 
-Set `schema-version` to `12`. Add a non-empty `title`. Add one or more non-empty strings under `steps`. Do not add other fields. Validate each file against the shared v12 runbook schema.
+Set `schema-version` to `13`. Add a `title`, `purpose`, `owner`, and `boundaries` value. Add `prerequisites` and `steps` lists. Validate each file against the shared v13 runbook schema.
 
-Write runbooks with ASD-STE100 rules. Use short sentences, active voice, and one instruction per sentence.
+Write runbooks with ASD-STE100 rules. Use short sentences, active voice, and one instruction in each sentence.
 
-## Coordinate and recover
+## Work with others
 
-Use Eliware Operations for cross-role communication and company-wide procedures. Use GitHub Issues for assignments, status, blockers, and next actions.
+Use Eliware Operations for cross-role communication and company-wide procedures. Use GitHub Issues for assignments, status, blockers, and required actions.
 
 Keep workspace-specific recovery steps in local runbooks. Link to company-wide recovery guidance in its owning repository.
 
-## Protect information
+## Manage information
 
 Keep credentials, secrets, decrypted data, private data, and runtime state out of Git. Keep the repository private.
 

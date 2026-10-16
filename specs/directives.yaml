@@ -1,16 +1,16 @@
-version: "12.0"
+version: "13.0"
 description: Baseline workspace guidance for repositories created from this template.
 directives:
   - id: E-20.0
     dos:
       - Use the workspace for role-specific decisions, coordination, and
         guidance.
-      - Keep role boundaries clear and link to shared requirements and
+      - Define role boundaries and link to shared requirements and
         procedures in their owning repositories.
       - Store each workspace-owned procedure as a separate .yaml runbook under
         runbooks/ and link it from runbooks/README.md.
-      - Validate each runbook against the shared v12 runbook schema.
+      - Validate each runbook against the shared v13 runbook schema.
     donts:
-      - Do not leave template-specific identity or placeholder content in a
-        derived workspace.
+      - Keep template identity and placeholder content out of a derived
+        workspace.
       - Do not duplicate shared conventions or company-wide procedures.

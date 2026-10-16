@@ -1,6 +1,6 @@
 {
   "name": "@eliware/workspace-template",
-  "version": "12.0.0",
+  "version": "13.0.0",
   "type": "module",
   "description": "An Eliware workspace template for indexed role guidance, ownership, communication, and recovery.",
   "keywords": [

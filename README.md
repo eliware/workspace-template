@@ -23,7 +23,7 @@ An Eliware workspace template for indexed role guidance, ownership, communicatio
 
 ## Features
 
-This template provides a reusable starting point. Each derived repository owns its product behavior and operating decisions.
+This template starts role-based workspaces. Each derived workspace owns its guidance and operating decisions.
 
 ## Requirements
 
@@ -50,7 +50,7 @@ Run `npm test` before handoff. It runs the repository checks through `eliware-te
 ## Troubleshooting
 
 Install the required Node.js and npm versions. Run `npm ci` after dependency changes.
-Review the file and rule in any validation error.
+For each validation error, read the named file and rule.
 
 ## Security
 
@@ -60,7 +60,7 @@ Use only approved secret stores for secret values.
 ## Runbooks
 
 Use [the runbook index](runbooks/README.md) to find local procedures.
-Store each procedure in a separate `.yaml` file under `runbooks/`. Validate each file against the shared v12 schema. Write runbook steps with ASD-STE100 rules.
+Store each procedure in a separate `.yaml` file under `runbooks/`. Validate each file against the shared v13 schema. Write runbook steps with ASD-STE100 rules.
 
 ## Communication
 
@@ -70,7 +70,7 @@ Use GitHub Issues for assignments and status.
 ## Recovery
 
 Keep workspace-specific recovery steps in local runbooks.
-Use Eliware Operations for cross-role recovery. Use GitHub Issues for blockers and next actions.
+Use Eliware Operations for cross-role recovery. Use GitHub Issues for blockers and required actions.
 
 ## Support
 
