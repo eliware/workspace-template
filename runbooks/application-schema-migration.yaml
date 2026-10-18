@@ -1,0 +1,78 @@
+schema-version: 13
+title: Deploy an application after a schema migration
+purpose: Stop the application, hand the database to the DBA, and start the approved version.
+owner: >-
+  Application owner named in the release issue. Escalation owner: Eli.
+boundaries: >-
+  This runbook owns application shutdown, deployment, startup, health checks, verification, and
+  application recovery. Operations owns the release sequence and outage window. The DBA owns
+  database steps in its linked runbook. The application owner supplies each technical value before
+  use. Eli handles escalation and selects every recovery or forward-fix option.
+prerequisites:
+  - Eli approved the release, and Operations recorded the outage window in the release issue.
+  - The release issue names the application owner and on-call contact.
+  - The release issue names the current app version and the approved target app version.
+  - The release issue names the exact app artifact and its SHA-256 digest.
+  - The application owner recorded and tested the application shutdown command.
+  - >-
+    The application owner recorded the deployment command, startup command, and required settings.
+  - >-
+    The application owner recorded health checks, readiness checks, and application checks.
+  - >-
+    The application owner recorded supported app recovery options and their verification steps.
+  - >-
+    The approved DBA release plan names the database target, starting schema, target schema,
+    migration, and backup check.
+  - >-
+    The DBA release plan lists supported database recovery options and their verification steps.
+  - The operator can contact the application owner, DBA, Operations, and Eli during the outage.
+  - >-
+    Read the Operations guidance at
+    [docs/README.md](https://github.com/eliware/operations/blob/main/docs/README.md).
+  - >-
+    Read the DBA runbook at
+    [DBA](https://github.com/eliware/dba/blob/main/runbooks/dba-schema-migration.yaml).
+steps:
+  - Read the approved release issue, the Operations guidance, and the DBA runbook.
+  - If release approval or the outage window is missing, stop and contact Eli and Operations.
+  - >-
+    Confirm that the release issue names the app owner, versions, artifact digest, commands, and
+    checks.
+  - >-
+    If an owner, version, digest, command, or check is missing, stop and ask the app owner to update
+    the release record.
+  - >-
+    Confirm that the DBA approved the database target, migration, backup check, and recovery
+    options.
+  - If the DBA plan or migration artifact is missing, stop and contact the DBA, Eli, and Operations.
+  - Stop every app instance and background worker with the app owner's recorded shutdown command.
+  - Confirm that every app instance and background worker has stopped.
+  - If any app instance or worker remains active, stop and tell the DBA, Eli, and Operations.
+  - Record the shutdown time and app version in the release issue.
+  - Tell the DBA that the app has stopped.
+  - Ask the DBA to run the linked database migration procedure.
+  - If the DBA reports a failure or failed verification, do not deploy the target app version.
+  - >-
+    If the DBA reports a failure, record the result and ask Eli which documented recovery or
+    forward-fix option to use.
+  - >-
+    If the DBA confirms migration success, deploy the approved app artifact with the app owner's
+    recorded command.
+  - Start the target app version with the app owner's recorded startup command and settings.
+  - Check the app health endpoint and readiness endpoint that the app owner recorded.
+  - Confirm that both endpoints return their expected status.
+  - Run the app owner's recorded checks for the target schema.
+  - Confirm that the app uses the target schema and passes each recorded check.
+  - Record the app version, artifact digest, check results, and startup time in the release issue.
+  - >-
+    If a health, readiness, or schema check fails, stop and record the last confirmed state and
+    sanitized error details.
+  - >-
+    If an app check fails, ask Eli which documented app recovery or forward-fix option to use.
+  - >-
+    Do not select or run an app recovery, database recovery, or forward fix before Eli directs it.
+  - If Eli directs an option, follow only its documented procedure and verification steps.
+  - If the outage window is at risk or has ended, stop and contact Eli and Operations.
+  - >-
+    Report status, checks, elapsed time, risks, unfinished work, and follow-up action in the release
+    issue.
