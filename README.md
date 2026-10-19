@@ -36,7 +36,7 @@ Run `npm ci` from the repository root.
 
 ## Usage
 
-Follow this README and the [user guide](docs/README.md).
+Follow this README and the [template guide](docs/README.md).
 
 ## Development
 
@@ -58,6 +58,7 @@ Use only approved secret stores for secret values.
 
 Use [the runbook index](runbooks/README.md) to find local procedures.
 Store each procedure in a separate `.yaml` file under `runbooks/`. Validate each file against the shared v13 schema. Write runbook steps with ASD-STE100 rules.
+Before you use a runbook, replace each bracketed placeholder with approved values from the owner and linked procedure.
 
 ## Communication
 

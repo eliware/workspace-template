@@ -37,6 +37,7 @@ prerequisites:
     Read the DBA runbook at
     [DBA](https://github.com/eliware/dba/blob/main/runbooks/dba-schema-migration.yaml).
 steps:
+  - If any bracketed template value remains, stop and update this runbook before the change.
   - Read the approved release issue, the Operations guidance, and the DBA runbook.
   - If release approval or the outage window is missing, stop and contact Eli and Operations.
   - >-
@@ -57,7 +58,7 @@ steps:
   - Ask the DBA to run the linked database migration procedure.
   - Confirm that the release issue records the DBA's migration result.
   - If the DBA reports a failure or failed verification, do not deploy the target app version.
-  - Record the completed migration in the application runbook.
+  - Record the completed migration in the release issue.
   - >-
     If the DBA reports a failure, record the result and ask Eli which documented recovery or
     forward-fix option to use.

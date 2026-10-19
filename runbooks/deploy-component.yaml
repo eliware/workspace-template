@@ -21,6 +21,7 @@ prerequisites:
   - The component owner supplied the target health check and its expected result.
   - The approved component deployment runbook is available at [ADD APPROVED RUNBOOK LINK].
 steps:
+  - If any bracketed template value remains, stop and update this runbook before deployment.
   - Read the approved release issue and linked operating procedures.
   - Confirm that the release issue records approval and the change window.
   - If approval or the change window is missing, stop and contact Operations and Eli.
