@@ -2,11 +2,15 @@
 
 ## Project
 
+See README.md for the workspace purpose, owner, and scope.
+
 ## Scope and boundaries
 
 Keep requirements in their authoritative specifications.
 
 ## Layout
+
+Use README.md and specs/README.md to find maintained files.
 
 ## Development
 
@@ -27,6 +31,12 @@ Keep credentials, secret values, private data, and runtime state out of Git.
 
 ## Changes
 
+Keep changes in this repository. Update each index when you add a file.
+
 ## Workspace
 
+Keep role guidance and local runbooks here. Keep application and database procedures in their owning repositories.
+
 ## Private distribution
+
+The source repository is public. The package has `private: true`, so npm cannot publish it. No container publication workflow exists.
