@@ -19,7 +19,8 @@
     "format:check": "eliware-test --format-check"
   },
   "engines": {
-    "node": ">=26"
+    "node": ">=26",
+    "npm": ">=12"
   },
   "devDependencies": {
     "@eliware/test": "^13.0.0"

@@ -1,16 +1,48 @@
 schema-version: 13
 title: Deploy an application component
 purpose: Deploy one released component version to one environment.
-owner: Component maintainer
-boundaries: This procedure deploys one component to one environment.
+owner: >-
+  [SET COMPONENT OWNER]. Escalation owner: Eli.
+boundaries: >-
+  The component owner supplies each target, version, artifact, command, and check. Operations owns
+  the release sequence and release decision. Eli handles escalation and selects each recovery or
+  forward-fix
+  option. Record each result in the release issue. Verify each result before you continue. This
+  procedure does not authorize deployment.
 prerequisites:
-  - A released component version exists.
-  - The deployment tool can access the target environment.
+  - Operations approved the release and recorded the change window in the release issue.
+  - The release issue names the component owner and on-call contact.
+  - The release issue names the component, target, environment, and approved version.
+  - The release issue records the exact artifact and its SHA-256 digest.
+  - The component owner recorded and tested the deployment command.
+  - The component owner recorded health checks and expected results.
+  - The component owner recorded supported recovery options and verification steps.
+  - The operator can contact the component owner, Operations, and Eli during the change window.
+  - The component owner supplied the target health check and its expected result.
+  - The approved component deployment runbook is available at [ADD APPROVED RUNBOOK LINK].
 steps:
-  - Select the released component version. The plan shows this version.
-  - Select the target environment. The plan shows the selected environment.
-  - Examine the deployment plan. The plan shows the component, version, and environment.
-  - Start the deployment. The tool reports a correct result.
-  - Check the component health endpoint. The endpoint returns HTTP 200.
-  - Check the component logs. The logs show no startup errors.
-  - Record the deployed version. The deployment record shows the version and time.
+  - Read the approved release issue and linked operating procedures.
+  - Confirm that the release issue records approval and the change window.
+  - If approval or the change window is missing, stop and contact Operations and Eli.
+  - Confirm that the release issue names the component, target, version, artifact, and digest.
+  - If required values are missing, stop and ask the component owner to update the release issue.
+  - Confirm that the deployment tool can access the target environment.
+  - If the tool cannot access the target, stop and contact the component owner and Eli.
+  - Select the approved version and target environment in the deployment tool.
+  - Confirm that the plan shows the approved version and target environment.
+  - Examine the deployment plan.
+  - Confirm that the component, target, version, and artifact match the release issue.
+  - Record the plan result in the release issue.
+  - If any plan value does not match, stop and contact the component owner and Operations.
+  - Run the component owner's recorded deployment command.
+  - Confirm that the deployment tool reports success for the approved target and version.
+  - Run each health check that the component owner recorded.
+  - Confirm that each health check returns its expected result.
+  - Check the component logs for startup errors.
+  - Confirm that the logs contain no startup errors.
+  - Record the target, version, artifact digest, checks, and time in the release issue.
+  - If deployment or a check fails, stop and record the last confirmed state.
+  - If a check fails, ask Eli which documented recovery or forward-fix option to use.
+  - Do not select or run a recovery or forward fix before Eli directs it.
+  - If Eli directs an option, follow its documented procedure and checks.
+  - If the change window is at risk or has ended, stop and contact Eli and Operations.

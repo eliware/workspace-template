@@ -7,12 +7,16 @@ boundaries: >-
   This runbook owns application shutdown, deployment, startup, health checks, verification, and
   application recovery. Operations owns the release sequence and outage window. The DBA owns
   database steps in its linked runbook. The application owner supplies each technical value before
-  use. Eli handles escalation and selects every recovery or forward-fix option.
+  use. Eli handles escalation and selects every recovery or forward-fix option. Record each result
+  in the release issue.
 prerequisites:
   - Eli approved the release, and Operations recorded the outage window in the release issue.
   - The release issue names the application owner and on-call contact.
   - The release issue names the current app version and the approved target app version.
   - The release issue names the exact app artifact and its SHA-256 digest.
+  - >-
+    The release issue links to the app owner's approved deployment and recovery runbook:
+    [ADD APPLICATION RUNBOOK LINK].
   - The application owner recorded and tested the application shutdown command.
   - >-
     The application owner recorded the deployment command, startup command, and required settings.
@@ -51,10 +55,14 @@ steps:
   - Record the shutdown time and app version in the release issue.
   - Tell the DBA that the app has stopped.
   - Ask the DBA to run the linked database migration procedure.
+  - Confirm that the release issue records the DBA's migration result.
   - If the DBA reports a failure or failed verification, do not deploy the target app version.
+  - Record the completed migration in the application runbook.
   - >-
     If the DBA reports a failure, record the result and ask Eli which documented recovery or
     forward-fix option to use.
+  - Confirm that Eli records the selected option in the release issue.
+  - If Eli has not recorded an option, stop and wait for the release issue update.
   - >-
     If the DBA confirms migration success, deploy the approved app artifact with the app owner's
     recorded command.

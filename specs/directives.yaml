@@ -10,6 +10,11 @@ directives:
       - Store each workspace-owned procedure as a separate .yaml runbook under
         runbooks/ and link it from runbooks/README.md.
       - Validate each runbook against the shared v13 runbook schema.
+      - Name an accountable owner for each local runbook.
+      - Keep application commands and checks in an application-owned runbook.
+      - Keep database migration steps in a DBA-owned runbook.
+      - Keep cross-role release decisions in Eliware Operations.
+      - Ask Eli to select a documented recovery or forward-fix option.
     donts:
       - Keep template identity and placeholder content out of a derived
         workspace.
