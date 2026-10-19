@@ -2,15 +2,11 @@
 
 ## Project
 
-See README.md for repository purpose, ownership, and scope.
-
 ## Scope and boundaries
 
 Keep requirements in their authoritative specifications.
 
 ## Layout
-
-Use README.md and specs/README.md to find maintained files.
 
 ## Development
 

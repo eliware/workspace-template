@@ -23,7 +23,7 @@ An Eliware workspace template for indexed role guidance, ownership, communicatio
 
 ## Features
 
-This template starts role-based workspaces. Each derived workspace owns its guidance and operating decisions.
+This template organizes role guidance, local procedures, decisions, and recovery steps. Each derived workspace defines its role owners and decision boundaries.
 
 ## Requirements
 
@@ -31,44 +31,64 @@ Use Node.js 26 or later and npm 12 or later for repository validation.
 
 ## Setup
 
-Create a repository from this template. Replace the template name, description, URLs, keywords, and sample content.
+Create a repository from this template. Set its name, description, URLs, keywords, role owners, and decision boundaries.
+Replace the sample guidance and procedures with approved content for the derived workspace.
+Keep implementation and shared policy in their owning repositories.
 Run `npm ci` from the repository root.
 
 ## Usage
 
-Follow this README and the [template guide](docs/README.md).
+Read the [workspace guide](docs/README.md) before you adapt the template.
+Use the [runbook index](runbooks/README.md) to find the sample procedures.
 
 ## Development
 
-Read [AGENTS.md](AGENTS.md) and [the specifications index](specs/README.md) before you change files.
-Keep documents and records in the repository that owns them.
+Read [AGENTS.md](AGENTS.md) before you change files.
+Use [the specifications index](specs/README.md) to find structured requirements.
+Keep each document and procedure in its owning repository. Link to shared requirements. Do not copy their content.
 
 ## Testing
 
-Run `npm test` before handoff. It runs the repository checks through `eliware-test`.
+Run `npm test` before handoff. It runs aggregate repository checks through `eliware-test`.
+Run `npm run lint` for lint checks.
+Run `npm run audit` for dependency checks.
+Run `npm run format:check` to check formatting.
+Run `npm run format` to format repository files.
 
 ## Troubleshooting
 
+If `npm ci` fails, use Node.js 26 or later and npm 12 or later.
+If `npm test` fails, read the reported file and rule.
+Fix the source document.
+Run `npm test` again.
+
 ## Security
 
-Keep credentials, secrets, private data, and runtime state out of Git.
-Use only approved secret stores for secret values.
+Keep credentials, secrets, private data, and runtime state out of Git. Use an approved secret store for each secret value.
+The template repository is public. `package.json` sets `private` to `true`, so npm publication is disabled.
+The template has no container publication workflow. Set source visibility and publication options for each derived repository.
 
 ## Runbooks
 
-Use [the runbook index](runbooks/README.md) to find local procedures.
-Store each procedure in a separate `.yaml` file under `runbooks/`. Validate each file against the shared v13 schema. Write runbook steps with ASD-STE100 rules.
-Before you use a runbook, replace each bracketed placeholder with approved values from the owner and linked procedure.
+Store each local procedure in a separate `.yaml` file under `runbooks/`.
+List each procedure in [the runbook index](runbooks/README.md).
+Use [the workspace guide](docs/README.md) for the shared schema and adaptation steps.
+
+The sample runbooks are incomplete examples.
+Replace every placeholder in a sample runbook.
+Ask its owner to confirm the completed procedure.
+Use the procedure only after the owner confirms it.
 
 ## Communication
 
-Use [Eliware Operations](https://github.com/eliware/operations) for cross-role communication and company-wide procedures.
-Use GitHub Issues for assignments and status.
+Use [Eliware Operations](https://github.com/eliware/operations) for cross-role release decisions and company-wide procedures.
+Use GitHub Issues to name work owners and record status, blockers, and required actions.
 
 ## Recovery
 
 Keep workspace-specific recovery steps in local runbooks.
-Use Eliware Operations for cross-role recovery. Use GitHub Issues for blockers and required actions.
+Follow the approved recovery procedure for the affected role.
+Use [Eliware Operations](https://github.com/eliware/operations) for cross-role recovery guidance.
 
 ## Support
 

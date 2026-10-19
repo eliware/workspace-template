@@ -56,9 +56,8 @@ steps:
   - Record the shutdown time and app version in the release issue.
   - Tell the DBA that the app has stopped.
   - Ask the DBA to run the linked database migration procedure.
-  - Confirm that the release issue records the DBA's migration result.
+  - Record the DBA's migration result and verification status in the release issue.
   - If the DBA reports a failure or failed verification, do not deploy the target app version.
-  - Record the completed migration in the release issue.
   - >-
     If the DBA reports a failure, record the result and ask Eli which documented recovery or
     forward-fix option to use.
