@@ -30,15 +30,13 @@ prerequisites:
   - >-
     The DBA release plan lists supported database recovery options and their verification steps.
   - The operator can contact the application owner, DBA, Operations, and Eli during the outage.
-  - >-
-    Read the Operations guidance at
-    [docs/README.md](https://github.com/eliware/operations/blob/main/docs/README.md).
+  - Read the organization's approved release guidance at [ADD APPROVED RELEASE GUIDANCE LINK].
   - >-
     Read the DBA runbook at
     [DBA](https://github.com/eliware/dba/blob/main/runbooks/dba-schema-migration.yaml).
 steps:
   - If any bracketed template value remains, stop and update this runbook before the change.
-  - Read the approved release issue, the Operations guidance, and the DBA runbook.
+  - Read the approved release issue, the release guidance, and the DBA runbook.
   - If release approval or the outage window is missing, stop and contact Eli and Operations.
   - >-
     Confirm that the release issue names the app owner, versions, artifact digest, commands, and

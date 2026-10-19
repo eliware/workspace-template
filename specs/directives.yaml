@@ -13,7 +13,8 @@ directives:
       - Name an accountable owner for each local runbook.
       - Keep application commands and checks in an application-owned runbook.
       - Keep database migration steps in a DBA-owned runbook.
-      - Keep cross-role release decisions in Eliware Operations.
+      - Keep cross-role release decisions in your organization's approved
+        communication channel.
       - Ask Eli to select a documented recovery or forward-fix option.
     donts:
       - Keep template identity and placeholder content out of a derived
