@@ -32,8 +32,7 @@ prerequisites:
   - The operator can contact the application owner, DBA, Operations, and Eli during the outage.
   - Read the organization's approved release guidance at [ADD APPROVED RELEASE GUIDANCE LINK].
   - >-
-    Read the DBA runbook at
-    [DBA](https://github.com/eliware/dba/blob/main/runbooks/dba-schema-migration.yaml).
+    Read the approved DBA runbook at [ADD APPROVED DBA RUNBOOK LINK].
 steps:
   - If any bracketed template value remains, stop and update this runbook before the change.
   - Read the approved release issue, the release guidance, and the DBA runbook.

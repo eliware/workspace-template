@@ -22,3 +22,4 @@
 - Replace private Operations links with public guidance for communication and recovery.
 - Replace the private Operations reference in the workspace guide with public communication guidance.
 - Replace private Operations references in the directives and sample runbook with public guidance and a template placeholder.
+- Replace the private DBA runbook URL with a placeholder for the approved runbook.
