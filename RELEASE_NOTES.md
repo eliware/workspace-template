@@ -20,3 +20,4 @@
 - Refresh the package lock with current dependency versions.
 - Document the public source repository, disabled npm publication, and derived repository visibility choices.
 - Replace private Operations links with public guidance for communication and recovery.
+- Replace the private Operations reference in the workspace guide with public communication guidance.

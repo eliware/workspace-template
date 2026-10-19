@@ -10,7 +10,7 @@ A workspace repository stores role-specific guidance, decisions, and local proce
 
 Keep each requirement and procedure with its owner. Link to shared guidance. Do not copy its content.
 Keep application commands and checks in an application-owned runbook. Keep database migration steps in a DBA-owned runbook.
-Use Eliware Operations for cross-role release decisions and company-wide procedures.
+Use your organization's approved communication channel for cross-role release decisions and company-wide procedures.
 
 ## Create a workspace repository
 
