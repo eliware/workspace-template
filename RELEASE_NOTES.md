@@ -19,3 +19,4 @@
 - Update the Knit deployment workflow to run `git pull` before dependency installation and validation.
 - Refresh the package lock with current dependency versions.
 - Document the public source repository, disabled npm publication, and derived repository visibility choices.
+- Replace private Operations links with public guidance for communication and recovery.

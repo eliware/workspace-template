@@ -81,14 +81,14 @@ Use the procedure only after the owner confirms it.
 
 ## Communication
 
-Use [Eliware Operations](https://github.com/eliware/operations) for cross-role release decisions and company-wide procedures.
+Use your organization's approved communication channel for cross-role release decisions and company-wide procedures.
 Use GitHub Issues to name work owners and record status, blockers, and required actions.
 
 ## Recovery
 
 Keep workspace-specific recovery steps in local runbooks.
 Follow the approved recovery procedure for the affected role.
-Use [Eliware Operations](https://github.com/eliware/operations) for cross-role recovery guidance.
+Follow the cross-role recovery procedure that your organization approves.
 
 ## Support
 

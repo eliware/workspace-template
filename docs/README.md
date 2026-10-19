@@ -71,9 +71,9 @@ Keep application deployment steps in an application-owned procedure. Keep databa
 
 ## Coordination and recovery
 
-Use [Eliware Operations](https://github.com/eliware/operations) for cross-role communication and company-wide procedures.
+Use your organization's approved communication channel for cross-role communication and company-wide procedures.
 Use GitHub Issues to name work owners and record status, blockers, and required actions.
-Keep workspace-specific recovery steps in local runbooks. Link to cross-role recovery guidance in its owning repository.
+Keep workspace-specific recovery steps in local runbooks. Follow the cross-role recovery procedure that your organization approves.
 Do not select a recovery or forward-fix option unless the responsible owner directs you to a documented procedure.
 
 ## Validate changes
