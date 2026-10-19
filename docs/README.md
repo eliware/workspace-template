@@ -2,6 +2,8 @@
 
 Use this guide to create and maintain a private Eliware workspace from this template.
 
+> After you create a repository from this template, replace this document with end-user documentation for your repository.
+
 ## Define the workspace
 
 1. Create a private repository from this template.
