@@ -1,5 +1,14 @@
 # Release Notes
 
+## 14.0.0 — 2026-10-20
+
+### Changed
+
+- Set the package version to 14.0.0 and update the matching lockfile metadata.
+- Align the workspace specification and sample runbooks with the v14 conventions and runbook schema.
+- Move the workspace guide to `docs/workspace-guide.md` and use `docs/README.md` as its index.
+- Link the release notes from README Usage and remove the unrelated source-module rule from AGENTS.md.
+
 ## 13.0.0 — 2026-10-19
 
 ### Added

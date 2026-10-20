@@ -38,8 +38,9 @@ Run `npm ci` from the repository root.
 
 ## Usage
 
-Read the [workspace guide](docs/README.md) before you adapt the template.
+Read the [workspace guide](docs/workspace-guide.md) before you adapt the template.
 Use the [runbook index](runbooks/README.md) to find the sample procedures.
+Read the [release notes](RELEASE_NOTES.md) for changes in each template version.
 
 ## Development
 

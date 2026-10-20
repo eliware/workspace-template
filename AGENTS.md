@@ -14,7 +14,7 @@ Use README.md and specs/README.md to find maintained files.
 
 ## Development
 
-Give each source and test module one cohesive purpose.
+Keep workspace requirements and procedures with their owners.
 
 ## Validation
 

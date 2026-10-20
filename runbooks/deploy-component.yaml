@@ -1,4 +1,4 @@
-schema-version: 13
+schema-version: 14
 title: Deploy an application component
 purpose: Deploy one released component version to one environment.
 owner: >-
