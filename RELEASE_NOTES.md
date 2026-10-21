@@ -13,6 +13,7 @@
 - Align the workspace specification and sample runbooks with the v14 conventions and runbook schema.
 - Move the workspace guide to `docs/workspace-guide.md` and use `docs/README.md` as its index.
 - Link the release notes from README Usage and remove the unrelated source-module rule from AGENTS.md.
+- Remove repeated validation and ownership instructions from README.md and redundant repository-boundary guidance from AGENTS.md.
 
 ## 13.0.0 — 2026-10-19
 
