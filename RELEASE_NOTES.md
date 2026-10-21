@@ -4,7 +4,7 @@
 
 ### Changed
 
-- Align package metadata and workspace directives with Eliware Test v15.
+- Set the package version to 15.0.0 and the workspace directive version to 15.0.
 - Upgrade `@eliware/test` to v15 and refresh transitive dependency versions.
 - Update the workspace guide and sample runbooks to the shared v15 runbook schema.
 
