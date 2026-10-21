@@ -2,9 +2,14 @@
 
 ## 14.0.0 — 2026-10-20
 
+### Added
+
+- Describe the sample runbooks, observable results, and links to the procedures that workspace runbooks require.
+
 ### Changed
 
 - Set the package version to 14.0.0 and update the matching lockfile metadata.
+- Update `@eliware/test` to 14.0.0 and refresh its locked dependencies.
 - Align the workspace specification and sample runbooks with the v14 conventions and runbook schema.
 - Move the workspace guide to `docs/workspace-guide.md` and use `docs/README.md` as its index.
 - Link the release notes from README Usage and remove the unrelated source-module rule from AGENTS.md.

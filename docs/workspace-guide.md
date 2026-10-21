@@ -40,6 +40,7 @@ Name the owner for every other decision.
 Name the required inputs, expected results, and escalation contact for each procedure.
 
 Keep shared policy in its owning repository. Link to the source document and identify the owning team or role.
+Record durable workspace decisions in indexed specifications.
 Use GitHub Issues to name work owners and record status, blockers, and required actions.
 
 ## Write and maintain runbooks
@@ -57,15 +58,22 @@ Use the [shared v14 runbook schema](https://github.com/eliware/test/blob/main/sp
 - `prerequisites`: a list of non-empty strings that name required approvals, inputs, access, and contacts.
 - `steps`: a list of one or more non-empty strings that gives the procedure.
 
+The template includes these sample runbooks:
+
+| File                                | Purpose                                                                          |
+| ----------------------------------- | -------------------------------------------------------------------------------- |
+| `deploy-component.yaml`             | Shows an application component deployment with owner-provided values and checks. |
+| `application-schema-migration.yaml` | Shows an application deployment that waits for a DBA migration and verification. |
+
+These examples contain placeholders. Do not use them as procedures. Replace each value and ask each owner to confirm the runbook before use.
+
 Do not add fields that the shared schema does not define. Write each step as an instruction. Put its condition before its action.
+
+State an observable result for each action. Tell the operator how to verify each result.
+
+Link each procedure to the Operations, DBA, or role-owner runbooks that it requires.
+
 Use short sentences and active voice. Ask the named owner to supply each required command, target, check, and recovery option.
-
-Keep placeholders until the named owner supplies each value. A sample runbook does not authorize deployment.
-
-The template includes `deploy-component.yaml` and `application-schema-migration.yaml` as incomplete examples.
-Do not use them as procedures.
-Replace every bracketed placeholder. Ask each named owner to check and confirm the completed procedure.
-Use a sample only after you remove all placeholders and each owner confirms the procedure.
 
 Keep application deployment steps in an application-owned procedure. Keep database migration steps in a DBA-owned procedure.
 
