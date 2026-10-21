@@ -1,4 +1,4 @@
-version: "14.0"
+version: "15.0"
 description: Baseline workspace guidance for repositories created from this template.
 directives:
   - id: E-20.0
@@ -9,7 +9,7 @@ directives:
         procedures in their owning repositories.
       - Store each workspace-owned procedure as a separate .yaml runbook under
         runbooks/ and link it from runbooks/README.md.
-      - Validate each runbook against the shared v14 runbook schema.
+      - Validate each runbook against the shared v15 runbook schema.
       - Name an accountable owner for each local runbook.
       - Keep application commands and checks in an application-owned runbook.
       - Keep database migration steps in a DBA-owned runbook.

@@ -48,9 +48,9 @@ Use GitHub Issues to name work owners and record status, blockers, and required 
 Use [the runbook index](../runbooks/README.md) to find the sample procedures. Store each local procedure in a separate `.yaml` file under `runbooks/`.
 Add every runbook to `runbooks/README.md`. Give each entry a title that names its task.
 
-Use the [shared v14 runbook schema](https://github.com/eliware/test/blob/main/specs/runbook-schema.yaml). Each runbook must contain these fields:
+Use the [shared v15 runbook schema](https://github.com/eliware/test/blob/main/specs/runbook-schema.yaml). Each runbook must contain these fields:
 
-- `schema-version`: the number `14`.
+- `schema-version`: the number `15`.
 - `title`: a non-empty string that names the procedure.
 - `purpose`: a non-empty string that states the intended result.
 - `owner`: a non-empty string that names the accountable owner.

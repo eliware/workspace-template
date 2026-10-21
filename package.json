@@ -1,6 +1,6 @@
 {
   "name": "@eliware/workspace-template",
-  "version": "14.0.0",
+  "version": "15.0.0",
   "type": "module",
   "description": "An Eliware workspace template for indexed role guidance, ownership, communication, and recovery.",
   "keywords": [
@@ -23,7 +23,7 @@
     "npm": ">=12"
   },
   "devDependencies": {
-    "@eliware/test": "^14.0.0"
+    "@eliware/test": "^15.0.0"
   },
   "jest": {
     "testEnvironment": "node",

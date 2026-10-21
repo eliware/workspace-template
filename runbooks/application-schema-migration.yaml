@@ -1,4 +1,4 @@
-schema-version: 14
+schema-version: 15
 title: Deploy an application after a schema migration
 purpose: Stop the application, hand the database to the DBA, and start the approved version.
 owner: >-
