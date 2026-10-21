@@ -46,15 +46,10 @@ Read the [release notes](RELEASE_NOTES.md) for changes in each template version.
 
 Read [AGENTS.md](AGENTS.md) before you change files.
 Use [the specifications index](specs/README.md) to find structured requirements.
-Keep each document and procedure in its owning repository. Link to shared requirements. Do not copy their content.
 
 ## Testing
 
 Run `npm test` before handoff. It runs aggregate repository checks through `eliware-test`.
-Run `npm run lint` for lint checks.
-Run `npm run audit` for dependency checks.
-Run `npm run format:check` to check formatting.
-Run `npm run format` to format repository files.
 
 ## Troubleshooting
 
@@ -76,9 +71,8 @@ List each procedure in [the runbook index](runbooks/README.md).
 Use [the workspace guide](docs/README.md) for the shared schema and adaptation steps.
 
 The sample runbooks are incomplete examples.
-Replace every placeholder in a sample runbook.
-Ask its owner to confirm the completed procedure.
-Use the procedure only after the owner confirms it.
+Replace each placeholder in a sample runbook.
+Ask the owner to confirm the completed procedure before use.
 
 ## Communication
 

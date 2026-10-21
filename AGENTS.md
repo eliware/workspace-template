@@ -14,7 +14,7 @@ Use README.md and specs/README.md to find maintained files.
 
 ## Development
 
-Keep workspace requirements and procedures with their owners.
+Check changes against workspace requirements.
 
 ## Validation
 
@@ -31,7 +31,7 @@ Keep credentials, secret values, private data, and runtime state out of Git.
 
 ## Changes
 
-Keep changes in this repository. Update each index when you add a file.
+Update each index when you add a file.
 
 ## Workspace
 
