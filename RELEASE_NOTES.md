@@ -1,5 +1,14 @@
 # Release Notes
 
+## 15.0.1 — 2026-10-26
+
+### Changed
+
+- Set the package version to 15.0.1 and update the matching lockfile metadata.
+- Upgrade `@eliware/test` to 15.0.1 and refresh its locked dependencies.
+- Refresh the locked versions of transitive dependencies.
+- Use the canonical private License badge in the README header.
+
 ## 15.0.0 — 2026-10-21
 
 ### Changed
